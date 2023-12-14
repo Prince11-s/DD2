@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins;
+    }
+        .nav_bar{
+            font-size: 40px;
+        color: #131ae7;
+        text-align: left;
+        letter-spacing: 1px;
+        margin: 1.4%;
+        margin-left: 2%;
+    }
+    p{
+        font-weight: bolder;
+    }
+    h1{
+        text-align: center;
+        color: #131ae7;
+
+    }
+    h2{
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    form{
+        height: 30rem;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 34%;
+        margin-top: 2%;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    label{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 2%;
+        letter-spacing: 0px;
+    }
+    input{
+        width: 300px;
+        height: 30px;
+        border: 1px solid;
+    }
+    select{
+        width: 180px;
+        border: 1px solid;
+    }
+    textarea{
+        width: 300px;
+        height: 70px;
+        border: 1px solid;
+    }
+    button{
+        margin-left: 155px;
+        margin-top: 20px;
+        width: 30%;
+      height: 40px;
+      border: 1px solid;
+      font-weight: bold;
+      color: white;
+      background-color: #131ae7;
+    }
+    button:hover{
+      background-color: rgb(0, 203, 0);
+    }
+    .roll_no_label{
+        margin-right: 60px;
+        
+    }
+    .name_label{
+        margin-right: 69px;
+    }
+    .dept_label{
+        margin-right: 15px;
+    }
+    .resn_label{
+        margin-right: 57px;
+    }
+    .roll_no{
+        margin-bottom: 5%;
+        margin-top: 6%;
+    }
+    .name{
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+    .dept{
+        margin-bottom: 5%;
+        margin-top: 2%;
+
+    }
+    .resn{
+        margin-bottom: 5%;
+        margin-top: 2%;
+
+    }
+    @media only screen and (max-width:700px){
+
+        .nav_bar{
+            margin-top: 30.5%;
+            margin-left: 9%;
+        }
+        p{
+        font-weight: bolder;
+        font-size: 37.5px;
+    }
+    h1{
+        font-size: 30px;
+        text-align: center;
+        color: #131ae7;
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 500px;
+
+    }
+    form{
+        height: 30rem;
+        width: 29rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+        margin-top: 8%;
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+    }
+    input{
+        width: 270px;
+        height: 30px;
+        border: 1px solid;
+
+    }
+    select{
+        height: 30px;
+    }
+    textarea{
+        width: 280px;
+        height: 70px;
+        border: 1px solid;
+
+    }
+    .roll_no_label{
+        font-size: 20px;
+    }
+    .name_label{
+        font-size: 20px;
+        margin-right: 71px;
+    }
+    .dept_label{
+        font-size: 20px;
+        margin-right: 11px;
+    }
+    .resn_label{
+        font-size: 20px;
+        margin-right: 58px;
+    }
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="nav_bar">
+            <p>WINGMAN</p>
+        </nav>
+        <div>
+            <h1>
+                Dr. N.G.P. PLACEMENT OFFICE
+            </h1>
+        </div>
+        <div class="req_form">
+            <form>
+                <h2>Drop a Request</h2>
+                <div class="roll_no">
+                    <label class="roll_no_label">Roll No.</label>
+                    <input type="text"><br>
+                </div>
+                <div class="name">
+                    <label class="name_label">Name</label>
+                    <input type="text"><br>
+                </div>
+                <div class="dept">
+                    <label class="dept_label">Department</label>
+                    <select>
+                        <option>Computer Technology</option>
+                    </select><br>
+                </div>
+               <div class="resn">
+                <label class="resn_label">Reason</label>
+                <textarea></textarea><br>
+               </div>
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
